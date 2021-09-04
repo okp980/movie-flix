@@ -1,0 +1,5 @@
+export const LOAD_MOVIES = "LOAD_MOVIES";
+export const ADD_TO_WATCHLIST = "ADD_TO_WATCHLIST";
+export const REMOVE_FROM_WATCHLIST = "REMOVE_FROM_WATCHLIST";
+export const LIKE_MOVIE = "LIKE_MOVIE";
+export const UNLIKE_MOVIE = "LIKE_MOVIE";

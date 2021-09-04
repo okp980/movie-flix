@@ -1,0 +1,48 @@
+.userInfo {
+	background-color: var(--clr-gray);
+	border-radius: 5px;
+	padding: 1em;
+	margin: 1em 0 2em;
+}
+
+.avatar img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: center;
+	margin-bottom: 1em;
+}
+
+.card {
+	background-color: rgb(82, 78, 78);
+	padding: 1em;
+	margin: 1em 0;
+	border-radius: 5px;
+}
+
+.cardItem {
+	margin: 1em 0;
+	border-bottom: 1px solid var(--clr-gray);
+}
+
+.cardItem p {
+	text-transform: unset;
+}
+
+.cardItem:last-of-type {
+	border-bottom: 0;
+}
+
+.card h3 {
+	font-size: small;
+	color: rgb(177, 170, 170);
+}
+
+.editProfile {
+	color: var(--clr-white);
+	font-size: var(--h3-font-size);
+	color: yellowgreen;
+}

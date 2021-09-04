@@ -1,0 +1,51 @@
+.featuredHeader {
+	padding: 2.5em 0;
+	border-bottom: 1px solid var(--clr-gray);
+	width: 100%;
+	overflow: hidden;
+	overflow-x: scroll;
+}
+
+.featuredHeader::-webkit-scrollbar {
+	display: none;
+}
+
+.menu {
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	min-width: 500px;
+}
+
+.list {
+	text-transform: capitalize;
+	color: var(--clr-gray);
+	cursor: pointer;
+	transition: var(--trans);
+}
+
+.list:hover,
+.list.active,
+.list:active {
+	color: var(--clr-white);
+}
+
+.list i {
+	margin-right: 0.5rem;
+}
+
+.list.active {
+	transform: scale(1.2);
+	position: relative;
+}
+
+.list.active::after {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: var(--clr-accent-100);
+	bottom: -15px;
+	left: 50%;
+	border-radius: 50%;
+}

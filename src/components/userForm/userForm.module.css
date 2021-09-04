@@ -1,0 +1,49 @@
+.userForm {
+	margin: 2em 0;
+}
+
+.avatar {
+	margin: 1em 0;
+	display: flex;
+	flex-direction: column;
+}
+
+.avatar img {
+	border-radius: 50%;
+
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: center;
+	margin-bottom: 1em;
+}
+
+.icon {
+	margin-left: 7px;
+}
+
+.formControl {
+	display: flex;
+	flex-direction: column;
+	margin: 0.5em 0;
+}
+
+.formControl label {
+	font-size: small;
+	text-transform: capitalize;
+	font-weight: 600;
+}
+
+.formUpload {
+	display: flex;
+	align-items: center;
+	padding: 0.5em;
+}
+
+@media screen and (max-width: 960px) {
+	.formUpload {
+		flex-direction: column;
+	}
+}

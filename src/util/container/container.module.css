@@ -1,0 +1,7 @@
+.container {
+	padding: 20px;
+	max-width: 1400px;
+	display: grid;
+	grid-gap: 2rem;
+	margin: 0 auto;
+}

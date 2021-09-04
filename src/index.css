@@ -1,13 +1,294 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+:root {
+	/* color */
+	--clr-white: #fffeff;
+	--clr-gray: #666670;
+	--clr-bg: rgb(13, 12, 17);
+	--clr-accent-100: #ff0e1e;
+	--clr-accent-50: #bb0814;
+	--clr-rating: #ffb500;
+
+	--trans: all 0.3s ease-in-out;
+	--radius: 30px;
+
+	/* font*/
+	--biggest-font-size: 2.5rem;
+	--h1-font-size: 2rem;
+	--h2-font-size: 1.6rem;
+	--h3-font-size: 1.3rem;
+	--body-font-size: 0.9rem;
+	--small-font-size: 0.85rem;
+	--smaller-font-size: 0.7rem;
+}
+
+@media screen and (min-width: 960px) {
+	:root {
+		--biggest-font-size: 3rem;
+		--body-font-size: 1rem;
+		--h3-font-size: 1.3rem;
+	}
+}
+
+body {
+	background-color: var(--clr-bg);
+	color: var(--clr-white);
+	font-size: var(--body-font-size);
+	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
+}
+
+.container {
+	padding: 20px;
+	max-width: 1400px;
+	display: grid;
+	grid-gap: 2rem;
+	margin: 0 auto;
+}
+.btn {
+	background-color: var(--clr-accent-100);
+	color: var(--clr-white);
+	text-transform: capitalize;
+	padding: 0.7em 1.8em;
+	border-radius: var(--radius);
+	cursor: pointer;
+	transition: var(--trans);
+}
+
+.btn.dark {
+	background: rgb(26, 24, 24);
+}
+.btn.dark:hover {
+	background: rgb(41, 39, 39);
+}
+
+.btn:hover {
+	background-color: var(--clr-accent-50);
+}
+
+.btn i {
+	margin-right: 0.8rem;
+}
+
+.btn--profilePic {
+	cursor: pointer;
+
+	border-radius: 5px;
+	margin: 0.5em 0;
+}
+
+.btn--profilePic.disabled {
+	background-color: #bb4d55;
+}
+
+.btn--profilePic:disabled {
+	cursor: not-allowed;
+}
+
+@media screen and (min-width: 960px) {
+	.btn--profilePic {
+		margin-left: 0.8em;
+		margin-top: 0;
+	}
+}
+
+.btn--hero {
+	display: flex;
+	align-items: center;
+}
+
+h1 {
+	font-size: var(--h1-font-size);
+	font-weight: 600;
+	text-transform: capitalize;
+}
+h2 {
+	font-size: var(--h2-font-size);
+	text-transform: capitalize;
+}
+h3 {
+	font-size: var(--h3-font-size);
+
+	text-transform: capitalize;
+}
+p,
+a {
+	font-size: var(--body-font-size);
+	text-transform: capitalize;
+}
+
+p {
+	line-height: 2.2;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	font-size: var(--h2-font-size);
+	color: var(--clr-gray);
+	margin-bottom: 5px;
+}
+
+input {
+	border: 1px solid var(--clr-rating);
+	padding: 0.8em;
+	outline: none;
+	border-radius: 5px;
+	margin-bottom: 5px;
+	color: var(--clr-gray);
+}
+
+input:focus {
+	outline: none;
+	background-color: rgb(216, 224, 236);
+	border: none;
+}
+
+.react--icons {
+	font-size: 20px;
+	margin-right: 15px;
 }

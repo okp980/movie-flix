@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Header from "./components/header/Header";
+import ModalManager from "./components/modalManager/ModalManager";
+import Home from "./page/home/Home";
+import { useSelector } from "react-redux";
+import { Route, Switch } from "react-router-dom";
+import Profile from "./page/profile/Profile";
+import ProtectedRoute from "./util/protectedRoute/ProtectedRoute";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import ErrorPage from "./page/errorPage/ErrorPage";
+import Unathorized from "./page/unauthorized/Unathorized";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	const modalState = useSelector((state) => state.modal);
+
+	return (
+		<>
+			<ToastContainer />
+			{modalState && <ModalManager />}
+			<Header />
+			<Switch>
+				<Route path="/" exact>
+					<Home />
+				</Route>
+				<Route path="/unauthorized">
+					<Unathorized />
+				</Route>
+				<ProtectedRoute path="/profile">
+					<Profile />
+				</ProtectedRoute>
+				<Route path="*">
+					<ErrorPage />
+				</Route>
+			</Switch>
+		</>
+	);
 }
 
 export default App;

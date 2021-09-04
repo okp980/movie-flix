@@ -1,0 +1,82 @@
+.card {
+	width: 100%;
+	transition: var(--trans);
+	cursor: pointer;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.9);
+}
+
+.card:hover {
+	box-shadow: 0px -1px 2px var(--clr-gray);
+}
+
+.cardImage {
+	height: 335px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.cardContent {
+	padding: 15px 5px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	background-color: rgb(36, 34, 34);
+}
+
+.cardTitle {
+	padding-top: 5px;
+}
+.cardTitle h3 {
+	padding-left: 5px;
+}
+
+.cardMenu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	column-gap: 10px;
+}
+
+.addToWatchlist {
+	color: var(--clr-gray);
+	font-size: var(--small-font-size);
+}
+
+.like {
+	color: var(--clr-gray);
+	font-size: var(--small-font-size);
+}
+
+.rating {
+	display: flex;
+	align-items: center;
+	color: var(--clr-rating);
+	font-weight: 600;
+}
+
+.rating::before {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f005";
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	margin-right: 5px;
+}
+
+.icon {
+	margin: 3px;
+}
+
+.icon:hover {
+	color: var(--clr-accent-100);
+	transition: var(--trans);
+}

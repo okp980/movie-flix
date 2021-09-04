@@ -1,0 +1,80 @@
+.userMovies h1 {
+	margin-bottom: 1em;
+	text-transform: uppercase;
+}
+
+.userMovies p {
+	margin-bottom: 1em;
+	font-style: italic;
+}
+
+.card {
+	background-color: var(--clr-gray);
+	padding: 1em 0.5em;
+	margin-bottom: 1em;
+	border-radius: 5px;
+}
+
+.subtitle {
+	margin: 0.8em 0;
+}
+
+.subtitle li {
+	border-right: 0;
+	padding: 0.5em;
+	margin-right: 0.5em;
+	font-size: var(--small-font-size);
+}
+
+.card p {
+	text-align: justify;
+	margin-bottom: 2em;
+	font-size: var(--small-font-size);
+}
+
+.avatar {
+	margin-bottom: 0.8em;
+}
+
+.avatar img {
+	border-radius: 50%;
+
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+
+	object-fit: cover;
+	object-position: center;
+	margin: 0 0.8em;
+}
+
+.delete {
+	text-transform: capitalize;
+	cursor: pointer;
+	color: yellowgreen;
+}
+
+.delete:hover {
+	text-decoration: underline;
+}
+
+@media screen and (min-width: 960px) {
+	.avatar {
+		margin-bottom: 0;
+	}
+	.card {
+		display: flex;
+	}
+
+	.subtitle {
+		display: flex;
+	}
+
+	.subtitle li {
+		border-right: 1px solid #ccc;
+	}
+
+	.subtitle li:last-of-type {
+		border-right: 0;
+	}
+}

@@ -1,0 +1,22 @@
+.unauthorized {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.lock {
+	width: 100px;
+	margin: auto;
+}
+
+.lock img {
+	width: 100%;
+}
+
+.unauthorized h3 {
+	text-align: center;
+	color: var(--clr-accent-100);
+}
