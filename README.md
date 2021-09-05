@@ -6,7 +6,7 @@ An unregistered user can watch any thriller from any category but must be regist
 - Must be logged in to view profile page.
 - Must be logged in to add movie to favourites or watchlist collection
 
-Live link: [Movie-flixx](https://www.movie-flixx.netlify.app)
+Live link: [www.movie-flixx.netlify.app](https://www.movie-flixx.netlify.app)
 
 # Library
 - Firebase:
@@ -23,6 +23,6 @@ Live link: [Movie-flixx](https://www.movie-flixx.netlify.app)
   - api call for movies with different categories
 - React youtube:
   - To fetch and play any selected movie from youtube
-  ## Other:
+  ## Others:
   - Material UI, React Icons, React Toastify, React Tooltip
 
