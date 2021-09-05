@@ -3,8 +3,8 @@ A **CRUD** application where movie thrillers of different category can be viewed
 An unregistered user can watch any thriller from any category but must be registered to create a favourite or watchlist collection.
 
 # Restrictions
-- Must be logged in to view profile page.
-- Must be logged in to add movie to favourites or watchlist collection
+- Must be logged-in to view profile page.
+- Must be logged-in to add movie to favourites or watchlist collection
 
 Live link: [www.movie-flixx.netlify.app](https://www.movie-flixx.netlify.app)
 
