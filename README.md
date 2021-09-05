@@ -14,7 +14,7 @@ An unregistered user can watch any thriller from any category but must be regist
 
 <img width="1264" alt="restrict-movie-flixx" src="https://user-images.githubusercontent.com/66972059/132137671-a5cc0a80-f91e-4cbb-a12b-ac79e3a3d11e.png">
 
-Live link: [www.movie-flixx.netlify.app](https://www.movie-flixx.netlify.app)
+Live link: [www.movie-flixx.netlify.app](https://movie-flixx.netlify.app/)
 
 # Library
 - Firebase:
