@@ -1,3 +1,5 @@
+<img width="1262" alt="movie-flix" src="https://user-images.githubusercontent.com/66972059/132137332-4a1a3f89-e9fa-4ed1-9a3b-317a5dc72c7b.png">
+
 # Description
 A **CRUD** application where movie thrillers of different category can be viewed, movies can be added to users choice of favourites or watchlists.
 An unregistered user can watch any thriller from any category but must be registered to create a favourite or watchlist collection.
