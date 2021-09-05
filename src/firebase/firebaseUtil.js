@@ -158,12 +158,11 @@ export async function uploadFileToFirebaseStorage(file) {
 						hideProgressBar: true,
 					});
 				} catch (error) {
-					console.log(error);
+					throw error;
 				}
 			}
 		);
 	} catch (error) {
-		console.log(error);
 		toast.error("Error trying to uploaded image", {
 			hideProgressBar: true,
 		});
