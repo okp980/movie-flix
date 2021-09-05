@@ -31,6 +31,6 @@ Live link: [www.movie-flixx.netlify.app](https://movie-flixx.netlify.app/)
   - api call for movies with different categories
 - React youtube:
   - To fetch and play any selected movie from youtube
-  ## Others:
+## Others:
   - Material UI, React Icons, React Toastify, React Tooltip
 
