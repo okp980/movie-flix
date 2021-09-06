@@ -34,6 +34,7 @@ const MovieCard = ({ movie }) => {
             toast.success("Added successfully to watchlist", { hideProgressBar: true })
             dispatch(addMovieToWatchlist(movie))
         } catch (error) {
+
             if (error.message === "Cannot read property 'uid' of null") {
                 return toast.error("Must Be Logged In  To Save Watchlists", { hideProgressBar: true })
             }

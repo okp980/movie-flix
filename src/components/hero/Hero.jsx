@@ -6,7 +6,6 @@ import { useDispatch } from 'react-redux'
 import useFetchMovie from '../../hooks/useFetchMovie';
 import movieTrailer from "movie-trailer";
 import { openModal } from '../../redux/action/modalAction';
-import { useMemo } from 'react';
 
 const Hero = () => {
 
@@ -14,12 +13,13 @@ const Hero = () => {
     const dispatch = useDispatch()
 
 
-    const randomId = useMemo(() => Math.floor(Math.random() * 1000), []);
+
+    const movieId = 497698;
 
     const { loading,
         error,
         movie: randomMovie
-    } = useFetchMovie(randomId)
+    } = useFetchMovie(movieId)
 
     function timeConvert(n) {
         const num = n;
