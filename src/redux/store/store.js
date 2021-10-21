@@ -4,10 +4,12 @@ import rootReducer from "../reducer/rootReducer/rootReducer";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { verifyAuth } from "../action/authAction";
 
-const store = createStore(
+const store = process.env.NODE_ENV === "development" ? createStore(
 	rootReducer,
 	composeWithDevTools(applyMiddleware(thunk))
-);
+) :  createStore(
+	rootReducer,
+	(applyMiddleware(thunk);
 
 store.dispatch(verifyAuth());
 
