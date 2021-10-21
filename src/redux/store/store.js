@@ -9,7 +9,7 @@ const store = process.env.NODE_ENV === "development" ? createStore(
 	composeWithDevTools(applyMiddleware(thunk))
 ) :  createStore(
 	rootReducer,
-	(applyMiddleware(thunk);
+	applyMiddleware(thunk);
 
 store.dispatch(verifyAuth());
 
